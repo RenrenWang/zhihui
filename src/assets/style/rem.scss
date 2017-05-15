@@ -1,0 +1,9 @@
+
+$font_size:75px;
+@function rem($pixels){
+   @return  $pixels / $font_size*1rem;
+ }
+$h:rem(100px);
+$bottom:rem(120px);
+$bottom_b:rem(110px);
+$loadingBottom:rem(20px);

@@ -1,0 +1,116 @@
+@import "./rem.scss";
+  .fl{
+    float: left;
+  }
+  .fr{
+    float: right;
+  }
+  .clearfix{
+
+    &:after{
+      content:'';
+      display: table;
+       clear:both;
+    }
+  }
+.pdding20{
+  padding: rem(20px);
+}
+.text-box{
+
+  padding: 15px 5px 0 5px;
+  line-height:  rem(40px);
+  text-indent: rem(30px);
+  letter-spacing: rem(2px);
+  font-size:16px;
+  width: 100%;
+  word-wrap: break-word;
+  color: #626262;
+  box-sizing: border-box;
+}
+
+.from,.push-info{
+    color:#868686;
+}
+.from{
+
+   margin: rem(20px) 0;
+   font-size: 14px;
+}
+.push-info{
+
+  color:#868686;
+
+  font-size: 12px;
+
+
+  >p{
+
+    display: inline;
+  >.iconfont{
+       margin-right: 5px;
+    }
+  }
+}
+
+#index,#introduce,#company,#policyHall,#terraceDetails,.ph-details,#activity,#activityD,#notice,#noticeD,#login,#edituser,#servecenter,#version,#activityenroll,#enterprisedemand,#service,#servicelist,#supply,#serviced,#noticepost{
+
+    .main{
+         position: fixed;
+         top: $h;
+         bottom: $bottom;
+         width: 100%;
+        //  min-height: 100%;
+        overflow-x: hidden;
+
+
+    }
+
+}
+.text-hidden{
+  line-height: 20px;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+overflow: hidden;
+}
+
+
+
+#loadingLast,#loadingLast2{
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  padding: rem(30px) 0;
+  height: $loadingBottom !important;
+  line-height:$loadingBottom;
+    color: #868686;
+    font-size: 16px;
+  z-index: 999;
+  border: none;
+  background:#f0f0f0 !important;
+}
+.edit-form{
+   .edit-input{
+     padding:rem(30px)  0;
+     margin:rem(15px);
+     border-bottom:1px solid #d6d6d6;
+     display: flex;
+      font-size: 16px;
+
+     span{
+       color: #b5b0b0;
+       flex-basis:100px;
+       display: inline-block;
+     }
+     input{
+       flex: 1;
+       width: 80%;
+        display: inline-block;
+        border:none;
+       outline: none;
+       background: #fff;
+     }
+   }
+}
